@@ -1,0 +1,5 @@
+#!/bin/bash
+
+[ -z "$CFILE" ] && exit 1
+gcc -c "$CFILE" -o "${CFILE%.c}.o"
+
